@@ -1,0 +1,39 @@
+﻿<Window x:Class="VendingMachineGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VendingMachineGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="426">
+    <Grid Background="Red" Margin="0,0,-13,0">
+        <Button HorizontalAlignment="Left" Margin="28,97,0,0" VerticalAlignment="Top" Width="84" Height="85" Click="Button_Click_CocaCola">
+            <Image Source=".\Images\COCACOLA.png"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="28,209,0,0" VerticalAlignment="Top" Width="84" Height="85" Click="Button_Click_PepsiMax">
+            <Image Source=".\Images\PEPSIMAX.png"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="28,318,0,0" VerticalAlignment="Top" Width="84" Height="85" Click="Button_Click_FaxeCondi">
+            <Image Source="/Images/FAXE.png"/>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="311,146,0,0" VerticalAlignment="Top" Width="84" Height="84" Click="Button_Click_InsertCoin">
+            Insert 10 kr
+        </Button>
+        <TextBox x:Name="CoinDisplay" Text="0.00 kr" HorizontalAlignment="Left" Height="42" Margin="311,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" FontFamily="Global Monospace" FontSize="15"/>
+        <TextBox x:Name="MainDisplay" HorizontalAlignment="Left" Height="42" Margin="28,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367" FontFamily="Global Monospace" FontSize="16"/>
+
+
+        <TextBox x:Name="Price1" Text="" HorizontalAlignment="Left" Height="27" Margin="117,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="CocaCola_Stock" HorizontalAlignment="Left" Height="27" Margin="117,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Text="Stock: 0 stk."/>
+        <Button Content="Refill" HorizontalAlignment="Left" Margin="117,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.62" Width="103" Click="Button_Click_Refill_CocaCola"/>
+
+        <TextBox x:Name="Price2" Text=""  HorizontalAlignment="Left" Height="27" Margin="117,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="PepsiMax_Stock" HorizontalAlignment="Left" Height="27" Margin="117,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Text="Stock: 0 stk."/>
+        <Button Content="Refill" HorizontalAlignment="Left" Margin="117,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.62" Width="103" Click="Button_Click_Refill_PepsiMax"/>
+
+        <TextBox x:Name="Price3" Text=""  HorizontalAlignment="Left" Height="27" Margin="117,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:Name="FaxeCondi_Stock" HorizontalAlignment="Left" Height="28" Margin="117,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" Text="Stock: 0 stk."/>
+        <Button Content="Refill" HorizontalAlignment="Left" Margin="117,383,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.62" Width="103" Click="Button_Click_Refill_FaxeCondi"/>
+
+    </Grid>
+</Window>
